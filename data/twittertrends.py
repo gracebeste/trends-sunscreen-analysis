@@ -13,11 +13,11 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 # Search tweets
-query = "#sunscreen OR #skincare"
+query = "#sunscreen OR #SPF OR #UVprotection OR #skincare"
 tweets = tweepy.Cursor(api.search_tweets, q=query, lang="en", since="2013-01-01").items(1000)
 
 # Save tweets to JSON
 tweets_data = [{"text": tweet.text, "created_at": tweet.created_at} for tweet in tweets]
-with open('tweets_sunscreen.json', 'w') as file:
+with open('/Users/gracebeste/documents/trends-sunscreen-analysis/tweets_sunscreen.json', 'w') as file:
     json.dump(tweets_data, file)
-print("Twitter data saved.")
+print("Twitter sunscreen trend data saved.")
