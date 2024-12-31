@@ -13,10 +13,10 @@ headers = {"token": "kbMPIvfqWqDZiIPlrdVAxhDJMufeubQG"}
 # Parameters
 params = {
     "datasetid": "GHCND",  # Global Historical Climatology Network Daily
-    "locationid": "FIPS:US",  # US
+    "locationid": "FIPS:US",  # Location: US
     "startdate": "2023-12-31", # Timeframe start. Date range cannot be >1 year.
     "enddate": "2024-12-30", # Timeframe end
-    "datatypeid": "TMAX",  # Max temperature as an example
+    "datatypeid": "TMAX",  # Max temperature
     "units": "metric", 
     "limit": 1000
 }
