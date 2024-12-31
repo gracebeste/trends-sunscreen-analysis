@@ -9,7 +9,7 @@ params = {
     "datasetid": "GHCND",  # Global Historical Climatology Network Daily
     "locationid": "FIPS:US",  # US
     "startdate": "2013-01-01", # Timeframe start
-    "enddate": "2024-12-28", # Timeframe end
+    "enddate": "2024-12-30", # Timeframe end
     "datatypeid": "TMAX",  # Max temperature as an example
     "units": "metric", 
     "limit": 1000
