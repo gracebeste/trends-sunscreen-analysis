@@ -1,5 +1,5 @@
 # weather-sentiments-industryeffects
-Repository housing my data analytics project on weather patterns and changes in industry performance and public sentiment on social media.
+Repository housing my data analytics project on the effect of weather patterns and changes in public sentiment regarding skin protection.
 
 1. About
 
