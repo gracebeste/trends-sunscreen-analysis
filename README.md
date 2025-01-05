@@ -4,10 +4,10 @@ Repository housing my data analytics project on the effect of weather patterns a
 Table of Contents:
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
-3. [Folder Structure](#folderstructure)
+3. [Folder Structure](#folder-structure)
 4. [Datasets](#datasets)
 5. [Analysis](#analysis)
-6. [Results and Discussion](#resultsanddiscussion)
+6. [Results and Discussion](#results-and-discussion)
 
 ## Introduction
 1. Introduction
