@@ -9,15 +9,8 @@ Table of Contents:
 5. Analysis
 6. Results and Discussion
 
-  - [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-1. About
+## Introduction
+1. Introduction
 
 2. Prerequisites
 
