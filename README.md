@@ -10,7 +10,7 @@ Table of Contents:
 6. [Results and Discussion](#results-and-discussion)
 
 ## Introduction
-1. Introduction
+The goal of this project is to analyze the relationship between weather patterns and public interest in skin protection from the sun. The weather data is pulled from the National Climatic Data Center's National Oceanic and Atmospheric Administration (NOAA). This dataset tracks maximum temperatures in the U.S. from 2020 to 2024. The public interest is gauged via proxy data. Google Trends data was pulled for certain search keywords in that same timeframe of 2020-2024. These search keywords included, "sunscreen," "SPF," "UV protection," and "skincare." 
 
 ## Prerequisites
 2. Prerequisites
