@@ -1,4 +1,4 @@
-# weather-sentiments-industryeffects
+# Rising Temperatures and Public Sentiment on Sunscreen
 Repository housing my data analytics project on the effect of weather patterns and changes in public sentiment regarding skin protection.
 
 Table of Contents:
