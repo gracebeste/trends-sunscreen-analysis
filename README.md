@@ -12,7 +12,7 @@ Table of Contents:
 6. [Results and Discussion](#results-and-discussion)
 
 ## Introduction
-The goal of this project is to analyze the relationship between weather patterns and public interest in skin protection from the sun. The weather data is pulled from the National Climatic Data Center's National Oceanic and Atmospheric Administration (NOAA). This dataset tracks maximum temperatures in the U.S. from 2020 to 2024. The public interest is gauged via proxy data. Google Trends data was pulled for certain search keywords from 2020 to 2024. These search keywords included: "sunscreen," "SPF," "UV protection," and "skincare."
+The goal of this project is to analyze the relationship between weather patterns and public interest in protection from the sun. The weather data is pulled from Visual Crossing Weather, an online source providing historical and forecast weather data. A Python script is used to scrape the dataset from VC's Weather API. This dataset tracks maximum temperatures in the U.S. from 2020 to 2024. The public interest is gauged via proxy data, namely Google Trends data for certain search keywords. Similarly to the weather dataset, a Python script is used to scrape the dataset from Google Trends, via the pytrends library. The dataset includes information regarding the popularity of the search keywords: "sunscreen," "SPF," "UV protection," and "skincare," and the timeframe spans 2020 to 2024.
 
 ## Prerequisites
 
