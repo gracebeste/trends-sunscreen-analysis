@@ -12,7 +12,7 @@ Table of Contents:
 6. [Results and Discussion](#results-and-discussion)
 
 ## Introduction
-This project investigates the relationship between weather patterns and public interest in sun protection. By analyzing historical weather data alongside Google Trends search data, the goal is to uncover trends and potential correlations between changing environmental conditions and consumer behavior. The study focuses on data from 2020 to 2024, with an emphasis on maximum temperatures in the United States and the popularity of search terms related to sun protection, such as "sunscreen," "SPF," and "UV protection."
+This project investigates the relationship between weather patterns and public interest in sun protection. By analyzing historical weather data alongside Google Trends search data, the goal is to uncover trends and potential correlations between changing environmental conditions and consumer behavior. The study focuses on data from 2020 to 2024, with an emphasis on maximum temperatures in the United States and the popularity of search terms related to sun protection, namely "sunscreen," "SPF," "UV protection," and "skincare."
 
 ## Prerequisites
 
@@ -30,8 +30,8 @@ Two primary datasets were used in this analysis:
 - Google Trends Data:
 
   - Source: Google Trends, accessed via the Pytrends library.
-  - Content: Search interest for keywords including "sunscreen," "SPF," "UV protection," and "skincare" over the same 2020–2024 timeframe.
-  - Methodology: A Python script utilizing the Pytrends library was used to collect the search popularity data for each keyword.
+  - Content: Search interest for keywords: "sunscreen," "SPF," "UV protection," and "skincare," over the same 2020–2024 timeframe.
+  - Methodology: A Python script leveraging the Pytrends library was used to collect the search popularity data for each keyword.
 
 These datasets provide the foundation for analyzing potential correlations between weather conditions and public interest in sun protection.
 
