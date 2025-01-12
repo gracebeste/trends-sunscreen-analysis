@@ -12,13 +12,27 @@ Table of Contents:
 6. [Results and Discussion](#results-and-discussion)
 
 ## Introduction
-The goal of this project is to analyze the relationship between weather patterns and public interest in protection from the sun. The weather data is pulled from Visual Crossing Weather, an online source providing historical and forecast weather data. A Python script is used to scrape the dataset from VC's Weather API. This dataset tracks maximum temperatures in the U.S. from 2020 to 2024. The public interest is gauged via proxy data, namely Google Trends data for certain search keywords. Similarly to the weather dataset, a Python script is used to scrape the dataset from Google Trends, via the pytrends library. The dataset includes information regarding the popularity of the search keywords: "sunscreen," "SPF," "UV protection," and "skincare," and the timeframe spans 2020 to 2024.
+This project investigates the relationship between weather patterns and public interest in sun protection. By analyzing historical weather data alongside Google Trends search data, the goal is to uncover trends and potential correlations between changing environmental conditions and consumer behavior. The study focuses on data from 2020 to 2024, with an emphasis on maximum temperatures in the United States and the popularity of search terms related to sun protection, such as "sunscreen," "SPF," and "UV protection."
 
 ## Prerequisites
 
 ## Folder Structure
 
 ## Datasets
+Two primary datasets were used in this analysis:
+
+Weather Data:
+
+Source: Visual Crossing Weather, a platform providing historical and forecast weather data.
+Content: Maximum daily temperatures across the United States from 2020 to 2024.
+Methodology: A Python script was employed to extract the data from the Visual Crossing Weather API.
+
+Google Trends Data:
+
+Source: Google Trends, accessed via the Pytrends library.
+Content: Search interest for keywords including "sunscreen," "SPF," "UV protection," and "skincare" over the same 2020–2024 timeframe.
+Methodology: A Python script utilizing the Pytrends library was used to collect the search popularity data for each keyword.
+These datasets provide the foundation for analyzing potential correlations between weather conditions and public interest in sun protection.
 
 ## Analysis
 
