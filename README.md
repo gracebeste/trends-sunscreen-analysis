@@ -21,17 +21,18 @@ This project investigates the relationship between weather patterns and public i
 ## Datasets
 Two primary datasets were used in this analysis:
 
-Weather Data:
+- Weather Data:
 
-Source: Visual Crossing Weather, a platform providing historical and forecast weather data.
-Content: Maximum daily temperatures across the United States from 2020 to 2024.
-Methodology: A Python script was employed to extract the data from the Visual Crossing Weather API.
+  - Source: Visual Crossing Weather, a platform providing historical and forecast weather data.
+  - Content: Maximum daily temperatures across the United States from 2020 to 2024.
+  - Methodology: A Python script was employed to extract the data from the Visual Crossing Weather API.
 
-Google Trends Data:
+- Google Trends Data:
 
-Source: Google Trends, accessed via the Pytrends library.
-Content: Search interest for keywords including "sunscreen," "SPF," "UV protection," and "skincare" over the same 2020–2024 timeframe.
-Methodology: A Python script utilizing the Pytrends library was used to collect the search popularity data for each keyword.
+  - Source: Google Trends, accessed via the Pytrends library.
+  - Content: Search interest for keywords including "sunscreen," "SPF," "UV protection," and "skincare" over the same 2020–2024 timeframe.
+  - Methodology: A Python script utilizing the Pytrends library was used to collect the search popularity data for each keyword.
+
 These datasets provide the foundation for analyzing potential correlations between weather conditions and public interest in sun protection.
 
 ## Analysis
