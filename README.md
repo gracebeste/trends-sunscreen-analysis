@@ -52,7 +52,7 @@ Before you begin this project, ensure you have the following installed:
 ## Folder Structure
 
 ## Datasets
-Two primary datasets were used in this analysis:
+Two primary datasets are used in this analysis:
 
 - Weather Data:
 
