@@ -19,7 +19,7 @@ This project investigates the relationship between weather patterns and public i
 Before you begin this project, ensure you have the following installed:
 
 1. **Programming Language**:
-- Python 3.13.1 or higher.
+   - Python 3.13.1 or higher.
 
 2. **Dependencies**:
    - Install the required libraries using the `requirements.txt` file:
