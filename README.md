@@ -16,6 +16,39 @@ This project investigates the relationship between weather patterns and public i
 
 ## Prerequisites
 
+Before you begin this project, ensure you have the following installed:
+
+1. **Programming Language**:
+   - Python 3.13.1 or higher.
+
+2. **Dependencies**:
+   - Install the required libraries using the `requirements.txt` file:
+     ```bash
+     pip3 install -r requirements.txt
+     ```
+
+3. **API Keys**:
+   - Obtain an API key from:
+     - [Visual Crossing Weather](https://www.visualcrossing.com/)
+     - Note that no API key is required for the Google trends data using the pytrends library.
+   - Save the VC Weather API key in an `.env` file as follows:
+     ```
+     VC_API_KEY=your_visual_crossing_key
+     ```
+
+4. **Tools**:
+   - Git for version control (download from [git-scm.com](https://git-scm.com/)).
+
+5. **System Requirements**:
+   - Tested on macOS Monterey 12.5.
+  
+6. **Environment Setup**:
+   - Optional: While not required, creating a virtual environment is recommended to isolate project dependencies and prevent conflicts with other Python projects. To create and activate a virtual environment, run the following in your command prompt:
+     ```bash
+     python -m venv env
+     source env/bin/activate  # macOS command
+     ```
+
 ## Folder Structure
 
 ## Datasets
