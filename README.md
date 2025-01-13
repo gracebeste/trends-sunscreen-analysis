@@ -33,7 +33,7 @@ Before you begin this project, ensure you have the following installed:
      - Note that no API key is required for the Google trends data using the pytrends library.
    - Save the VC Weather API key in an `.env` file as follows:
      ```
-     VC_API_KEY=your_visual_crossing_key
+     VC_API_KEY=[your_visual_crossing_key]
      ```
 
 4. **Tools**:
