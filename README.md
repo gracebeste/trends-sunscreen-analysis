@@ -57,8 +57,9 @@ Two primary datasets are used in this analysis:
 - Weather Data:
 
   - Source: Visual Crossing Weather, a platform providing historical and forecast weather data.
-  - Content: Maximum daily temperatures across the United States from 2020 to 2024.
+  - Content: Maximum daily temperatures across the United States* from 2020 to 2024.
   - Methodology: A Python script was employed to extract the data from the Visual Crossing Weather API.
+_*Note that VC weather data is always reported based on a point location. The location entered is geocoded to a point, and the weather at the port is returned as the result. In the case of this analysis, where the location is set to "USA," the geocoder appears to geocode the point to Washington DC._
 
 - Google Trends Data:
 
