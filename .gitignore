@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 # Data files to ignore when committing updates to the repository:
 *.csv
 *.json
 *.xlsx
 # Files containing API keys to ignore when committing updates to the repository:
 .env
+=======
+<<<<<<< HEAD
+=======
+# Ignore the file containing API key information
+.env
+
+# Ignore data files
+*.csv
+*.json
+*.xlsx
+>>>>>>> 92516ac (Initial commit - adding scripts)
+
+>>>>>>> c1f23c0 (Initial commit - adding scripts)
