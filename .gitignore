@@ -1,0 +1,6 @@
+# Data files to ignore when committing updates to the repository:
+*.csv
+*.json
+*.xlsx
+# Files containing API keys to ignore when committing updates to the repository:
+.env
