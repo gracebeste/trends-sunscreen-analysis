@@ -1,5 +1,5 @@
 # Rising Temperatures and Interest in Sunscreen
-NOTE: This project is currently in a draft state and is awaiting finalization of files from my local drive.
+NOTE: THIS PROJECT IS IN PROGRESS AND IS CURRENTLY IN A DRAFT STATE.
 
 This repository houses my data analytics project on the effect of weather patterns and changes in public sentiment regarding skin protection.
 
