@@ -3,9 +3,9 @@ import numpy as np
 
 # File paths for the weather data
 weather_files = [
-    '/Users/gracebeste/documents/trends-sunscreen-analysis/weather/visual-crossing/raw-data/usa_daily_weather_2020_2021.csv',
-    '/Users/gracebeste/documents/trends-sunscreen-analysis/weather/visual-crossing/raw-data/usa_daily_weather_2022_2023.csv',
-    '/Users/gracebeste/documents/trends-sunscreen-analysis/weather/visual-crossing/raw-data/usa_daily_weather_2024.csv'
+    '/Users/gracebeste/documents/trends-sunscreen-analysis/src/weather/visual-crossing/raw-data/usa_daily_weather_2020_2021.csv',
+    '/Users/gracebeste/documents/trends-sunscreen-analysis/src/weather/visual-crossing/raw-data/usa_daily_weather_2022_2023.csv',
+    '/Users/gracebeste/documents/trends-sunscreen-analysis/src/weather/visual-crossing/raw-data/usa_daily_weather_2024.csv'
 ]
 
 # Load and concatenate all weather datasets
@@ -27,14 +27,14 @@ weekly_weather = weather_data.groupby('week_start').agg({
 }).reset_index()
 
 # Load Google Trends data
-trends_data = pd.read_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/sentiment/google/raw-data/usa_weekly_trends_2020_2024.csv')
+trends_data = pd.read_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/src/sentiment/google/raw-data/usa_weekly_trends_2020_2024.csv')
 trends_data['date'] = pd.to_datetime(trends_data['date'])
 
 # Merge the datasets on 'week_start' and 'date' (Google Trends 'date' is already weekly)
 merged_data = pd.merge(weekly_weather, trends_data, left_on='week_start', right_on='date')
 
 # Save merged data
-merged_data.to_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/weather_trends_merged.csv', index=False)
+merged_data.to_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_merged.csv', index=False)
 print("VC Weather and Google Trends data merged and saved.")
 
 # Conduct QC checks on merged dataset

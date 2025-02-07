@@ -1,10 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import seaborn as sns
 
 # Load data
 merged_data = pd.read_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/weather_trends_merged.csv')
-'''
+
 # Convert 'week_start' to datetime and create 'month' column
 merged_data['week_start'] = pd.to_datetime(merged_data['week_start'])
 merged_data['month'] = merged_data['week_start'].dt.to_period('M')
@@ -50,9 +51,6 @@ plt.show()
 # List available colors for customization
 available_colors = list(mcolors.CSS4_COLORS.keys())
 print("Available colors:", available_colors)
-'''
-
-import seaborn as sns
 
 # Example: Correlation between temperature and search interest
 # merged_data = pd.merge(weather_data, trends_data, on='date')
@@ -64,7 +62,7 @@ plt.title('Correlation Between Temperature and "Sunscreen" Search Interest')
 plt.xlabel('Max Temperature Per Week (°F)')
 plt.ylabel('Search Interest for "Sunscreen"')
 plt.show()
-'''
+
 # Creating a scatterplot for "SPF" searches
 sns.scatterplot(x='tempmax', y='sunscreen', data=merged_data)
 plt.title('Correlation Between Temperature and "Sunscreen" Search Interest')
@@ -85,4 +83,3 @@ plt.title('Correlation Between Temperature and "Sunscreen" Search Interest')
 plt.xlabel('Max Temperature Per Week (°F)')
 plt.ylabel('Search Interest for "Sunscreen"')
 plt.show()
-'''
