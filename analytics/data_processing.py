@@ -4,7 +4,7 @@ import pandas as pd
 
 def load_and_process_data():
     """Load the dataset and apply necessary 'week_start' and 'month' transformations."""
-    filepath = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/weather_trends_merged.csv"
+    filepath = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_merged.csv"
     
     df = pd.read_csv(filepath)
     df['week_start'] = pd.to_datetime(df['week_start'])
