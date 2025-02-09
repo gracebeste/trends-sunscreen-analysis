@@ -5,3 +5,7 @@
 *.csv
 *.json
 *.xlsx
+
+# Ignore pycache folder
+__pycache__/
+
