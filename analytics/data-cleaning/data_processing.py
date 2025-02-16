@@ -30,5 +30,4 @@ def load_and_process_data():
 
     return df
 
-# Running the function:
 load_and_process_data()

@@ -1,4 +1,4 @@
-# Creating plots comparing the patterns for different search terms with maximum temps at that time:
+# Creating plots comparing the patterns for different search terms with maximum UV index values at that time:
 
 import pandas as pd
 import matplotlib.pyplot as plt

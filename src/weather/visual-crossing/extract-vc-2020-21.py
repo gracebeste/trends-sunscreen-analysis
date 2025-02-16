@@ -33,7 +33,7 @@ response = requests.get(base_url, params=params)
 # Check for successful response
 if response.status_code == 200:
     # Save data to a CSV file
-    with open("/Users/gracebeste/Documents/trends-sunscreen-analysis/weather/visual-crossing/raw-data/usa_daily_weather_2020_2021.csv", "wb") as file:
+    with open("/Users/gracebeste/Documents/trends-sunscreen-analysis/src/weather/visual-crossing/raw-data/usa_daily_weather_2020_2021.csv", "wb") as file:
         file.write(response.content)
     print("Data saved to 'usa_daily_weather_2020_2021.csv'")
 else:

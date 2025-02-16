@@ -1,3 +1,5 @@
+# Merge weather and search interest datasets
+
 import pandas as pd
 import numpy as np
 
@@ -27,7 +29,7 @@ weekly_weather = weather_data.groupby('week_start').agg({
 }).reset_index()
 
 # Load Google Trends data
-trends_data = pd.read_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/src/sentiment/google/raw-data/usa_weekly_trends_2020_2024.csv')
+trends_data = pd.read_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/src/sentiment/google/raw-data/usa-dc_weekly_trends_2020_2024.csv')
 trends_data['date'] = pd.to_datetime(trends_data['date'])
 
 # Merge the datasets on 'week_start' and 'date' (Google Trends 'date' is already weekly)
