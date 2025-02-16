@@ -1,10 +1,11 @@
 # Building overlay plots comparing the individual effects of temperature or UV index values against search terms
+
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from data_processing import load_and_process_data
 
 # Load the processed data
-df = load_and_process_data()
+df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Normalize tempmax and uvindex to a 0-1 scale, to make them comparable in one overlay plot:
 df["tempmax_norm"] = (df["tempmax"] - df["tempmax"].min()) / (df["tempmax"].max() - df["tempmax"].min())

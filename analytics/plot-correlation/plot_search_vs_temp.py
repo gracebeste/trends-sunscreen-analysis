@@ -1,11 +1,11 @@
 # Creating plots comparing the patterns for different search terms with maximum temps at that time:
 
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from data_processing import load_and_process_data
 
 # Load the processed data
-df = load_and_process_data()
+df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Creating a function plot_search_vs_temp() to loop through the different search terms and create a temp comparison plot for each term:
 def plot_search_vs_temp(search_term):
@@ -22,7 +22,7 @@ def plot_search_vs_temp(search_term):
     plt.xlabel('Max Temperature Per Week (°F)')
     plt.ylabel(f'Search Interest for "{search_term}"')
 
-    plt.savefig(f"figures/temp_vs_{search_term}.png")
+    plt.savefig(f"figures/plot-correlation/temp_vs_{search_term}.png")
     plt.show()
     plt.close()
 
