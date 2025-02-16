@@ -94,25 +94,27 @@ Leveraging the cleaned dataset, I conducted three main types of analyses:
 
 #### Search Interest and Weather Trends Over Time:
 
-   Search interest for "sunscreen," "SPF," and "UV protection" exhibits seasonal fluctuations, peaking during summer months when temperatures and UV index values are highest. Additionally, search interest for these terms has generally increased from 2020 to 2024.
+- Search interest for "sunscreen," "SPF," and "UV protection" exhibits seasonal fluctuations, peaking during summer months when temperatures and UV index values are highest. Additionally, search interest for these terms has generally increased from 2020 to 2024.
+![sunscreen search interest over time](/figures/plot-time-series/trend_sunscreen.png)
+![SPF search interest over time](/figures/plot-time-series/trend_SPF.png)
+![UV protection search interest over time](/figures/plot-time-series/trend_UV_protection.png)
+- One notable anomaly occurred between June and July 2021, when search interest for "sunscreen" spiked significantly. However, when comparing this spike to temperature trends and UV index trends, there is no corresponding peak in weather conditions, suggesting that external factors (e.g., media coverage, influencer discussions, policy changes) may have influenced this surge in interest.
 
-   One notable anomaly occurred between June and July 2021, when search interest for "sunscreen" spiked significantly. However, when comparing this spike to temperature trends and UV index trends, there is no corresponding peak in weather conditions, suggesting that external factors (e.g., media coverage, influencer discussions, policy changes) may have influenced this surge in interest.
+- Search interest for "skincare" does not follow the same seasonal pattern as the other terms but has steadily increased over time, indicating a broader trend of growing consumer interest in skincare beyond just sun protection.
 
-   Search interest for "skincare" does not follow the same seasonal pattern as the other terms but has steadily increased over time, indicating a broader trend of growing consumer interest in skincare beyond just sun protection.
-
-   Looking at weekly maximum temperature and weekly maximum UV index, these values exhibit a predictable seasonal pattern. However, an interesting trend emerges: maximum UV index values appear to be increasing over time, with notable peaks in 2023 and 2024.
+- Looking at weekly maximum temperature and weekly maximum UV index, these values exhibit a predictable seasonal pattern. However, an interesting trend emerges: maximum UV index values appear to be increasing over time, with notable peaks in 2023 and 2024.
 
 #### Correlation Between Search Interest and Weather Conditions:
 
-   Correlation plots reveal that both temperature and UV index are strongly correlated with search interest for "sunscreen," "SPF," and "UV protection." This suggests that public interest in sunscreen is indeed influenced by current weather trends. However, further analysis is needed to determine whether temperature, UV index, or another external factor is the primary driver of these trends.
+Correlation plots reveal that both temperature and UV index are strongly correlated with search interest for "sunscreen," "SPF," and "UV protection." This suggests that public interest in sunscreen is indeed influenced by current weather trends. However, further analysis is needed to determine whether temperature, UV index, or another external factor is the primary driver of these trends.
 
 ### Interpretation & Implications
 
 #### Consumer Behavior Insights:
 
-   Prior to conducting this analysis, I was curious whether UV index would have a stronger correlation with search interest than temperature. However, since high UV index values often coincide with high temperatures, the search interest could be more closely tied to people’s perception of the weather, especially given that temperature is much easier to perceive than UV index, which requires looking up a forecast.
+Prior to conducting this analysis, I was curious whether UV index would have a stronger correlation with search interest than temperature. However, since high UV index values often coincide with high temperatures, the search interest could be more closely tied to people’s perception of the weather, especially given that temperature is much easier to perceive than UV index, which requires looking up a forecast.
 
-   These findings suggest that weather-driven consumer behavior may be more intuitive than scientifically informed, meaning that sunscreen brands could benefit from advertising based on perceived weather conditions rather than just UV index alerts.
+These findings suggest that weather-driven consumer behavior may be more intuitive than scientifically informed, meaning that sunscreen brands could benefit from advertising based on perceived weather conditions rather than just UV index alerts.
 
 #### Further Research & Next Steps:
 
@@ -133,7 +135,7 @@ To expand on these findings, I would be interested in conducting:
 
 While this analysis provides valuable insights into the relationship between weather conditions and public interest in sunscreen-related topics, there are some important limitations to consider:
 
-- Location Scope: Both the search trend data and weather data in this analysis are specific to Washington, D.C. The Google Trends data was filtered to reflect search interest only from this region (geo='US-DC'), and the weather data was sourced from Visual Crossing’s default location for "USA", which corresponds to Washington, D.C. As a result, these findings do not necessarily generalize to other regions with different climates and search behaviors (e.g., Florida vs. Minnesota).
+- Location Scope: Both the search trend data and weather data in this analysis are specific to Washington, D.C. The Google Trends data was filtered to reflect search interest only from this region (`geo='US-DC'`), and the weather data was sourced from Visual Crossing’s default location for "USA", which corresponds to Washington, D.C. As a result, these findings do not necessarily generalize to other regions with different climates and search behaviors (e.g., Florida vs. Minnesota).
 - Limited Weather Scope: Ideally, the weather dataset would include nationwide maximum temperature and UV index values to provide a more comprehensive analysis of trends across different regions. However, I was unable to retrieve countrywide weather data at this level of granularity. Therefore, the analysis primarily reflects the relationship between Washington, D.C.’s weather patterns and its local search interest, rather than national trends.
 - Correlation vs. Causation: While the analysis identifies strong correlations between weather conditions and search interest, it does not prove causation. External factors such as news articles, social media trends, policy changes, or major skincare campaigns could also be influencing search behavior, independent of weather patterns.
 - Potential Bias in Search Data: Google Trends normalizes search interest relative to total search volume, which means fluctuations in sunscreen-related searches could also be influenced by changes in overall search activity, rather than absolute increases in interest.
