@@ -1,10 +1,11 @@
-# Plot search interest trends over time:
+# Plot search interest trends over time (2020-2024)
 
+# Import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-# Load cleaned dataset
+# Load and read in cleaned dataset
 df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Set 'week_start' as the index

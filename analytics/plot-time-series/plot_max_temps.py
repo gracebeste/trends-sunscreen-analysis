@@ -1,11 +1,14 @@
-# Creating a plot with maximum weekly temperatures from 2020-2024:
+# Create a plot with maximum weekly temperatures from 2020-2024
 
+# Import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-# Load dataset
+# Load and read in dataset
 df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
+
+# Set the "week_start" column as the index
 df.set_index('week_start', inplace=True)
 
 # Extract year and month for color-coding
@@ -35,10 +38,10 @@ for label, tick_date in zip(ax.get_xticklabels(), tick_dates):
     label.set_color(year_color_map.get(year, 'black'))  # Assign color based on year
 
 # Adjust label visibility
-plt.xticks(rotation=45, fontsize=8)  # Keep horizontal for clarity
-plt.subplots_adjust(bottom=0.15)  # Avoid cutoff issues for x-axis title
+plt.xticks(rotation=45, fontsize=8)
+plt.subplots_adjust(bottom=0.15)  # Avoid cutoff for x-axis title
 
-# Label axes, title, and grid
+# Label axes, title, and background of plot
 plt.xlabel('Month', fontsize=12)
 plt.ylabel('Temperature (°F)', fontsize=12)
 plt.title('Weekly Maximum Temperatures (2020-2024)', fontsize=14)

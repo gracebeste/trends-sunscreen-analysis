@@ -1,10 +1,11 @@
-# Creating a plot with maximum weekly UV index values from 2020-2024:
+# Create a plot with maximum weekly UV index values from 2020-2024:
 
+# Import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-# Reading in dataset:
+# Read in dataset:
 df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Set 'week_start' as the index
@@ -40,7 +41,7 @@ for label, tick_date in zip(ax.get_xticklabels(), tick_dates):
 plt.xticks(rotation=45, fontsize=8)
 plt.subplots_adjust(bottom=0.15)  # Avoid cutoff issues for x-axis title
 
-# Labeling axes, creating title, and formatting background of plot
+# Label axes, create title, and format the background of the plot
 plt.xlabel('Month', fontsize=12)  # The labels are the months for visualization purposes, even though the data is at a weekly level
 plt.ylabel('UV Index Values', fontsize=12)
 plt.title('Weekly Maximum UV Index Values (2020-2024)', fontsize=14)
