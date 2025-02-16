@@ -9,8 +9,8 @@ def load_and_process_data():
     filepath = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_merged.csv"
     df = pd.read_csv(filepath)
 
-    # Convert 'week_start' to datetime
-    df["week_start"] = pd.to_datetime(df["week_start"], errors="coerce")
+    # Convert 'week_start' to datetime (force proper format)
+    df["week_start"] = pd.to_datetime(df["week_start"], format="%Y-%m-%d", errors="coerce")
 
     # Exclude "date" and "isPartial" from the cleaned dataset
     df = df.drop(columns=["date", "isPartial"], errors="ignore")
