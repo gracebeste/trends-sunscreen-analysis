@@ -57,7 +57,7 @@ Two primary datasets are used in this analysis:
 - Weather Data:
 
   - Source: Visual Crossing Weather, a platform providing historical and forecast weather data.
-  - Content: Maximum daily temperatures across the United States* from 2020 to 2024.
+  - Content: Maximum daily temperatures and UV index values across the United States* from 2020 to 2024.
      - _*Note that VC weather data is always reported based on a point location. The location entered is geocoded to a point, and the weather at the port is returned as the result. In the case of this analysis, where the location is set to "USA," the geocoder appears to geocode the point to Washington, D.C._
   - Methodology: A Python script was employed to extract the data from the Visual Crossing Weather API.
 
@@ -70,5 +70,8 @@ Two primary datasets are used in this analysis:
 These datasets provide the foundation for analyzing potential correlations between weather conditions and public interest in sun protection.
 
 ## Analysis
+To conduct my analyses, I merged and cleaned the two datasets (see folder analytics/data-cleaning/). I first merged them to align the search interest to the corresponding weather values for that week. Then, I cleaned the dataset, assigning proper datatypes and removing unnecessary fields for my analysis.
+
+Leveraging the cleaned dataset, I built some time series plots, to observe how each of these variables (maximum temperatures, maximum UV index values, and search interest for each term) changed over time. I also built correlation plots to observe any relationships between search interest for each term and the maximum temperature or UV index value for that week. To observe which value had a stronger relationship with the search term, I then created normalized overlay plots, normalizing the temperature and UV index values on a 0-1 scale to compare the two trend lines side-by-side.
 
 ## Results and Discussion

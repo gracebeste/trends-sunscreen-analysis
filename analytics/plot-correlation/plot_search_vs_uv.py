@@ -1,8 +1,8 @@
 # Creating plots comparing the patterns for different search terms with maximum temps at that time:
 
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandas as pd
 
 # Load the processed data
 df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
