@@ -46,7 +46,7 @@ def plot_trend_over_time(term):
         label.set_color(year_color_map.get(year, 'black'))  # Assign color based on year
 
     # Adjust label visibility
-    plt.xticks(rotation=45, fontsize=8)
+    plt.xticks(rotation=45, fontsize=7.5)
     plt.subplots_adjust(bottom=0.15)  # Avoid cutoff issues for x-axis title
 
     # Add labels and title, adjust plot formatting
