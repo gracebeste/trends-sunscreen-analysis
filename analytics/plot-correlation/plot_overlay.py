@@ -34,7 +34,7 @@ def plot_normalized_correlation(search_term):
 
     # Save & Show
     plt.legend()
-    plt.savefig(f"figures/plot-correlation/normalized_temp_uv_vs_{search_term}.png")
+    plt.savefig(f"figures/plot-norm-overlay/normalized_temp_uv_vs_{search_term.replace(' ', '_')}.png")
     plt.show()
     plt.close()
 

@@ -94,19 +94,26 @@ Leveraging the cleaned dataset, I conducted three main types of analyses:
 
 #### Search Interest and Weather Trends Over Time:
 
-- Search interest for "sunscreen," "SPF," and "UV protection" exhibits seasonal fluctuations, peaking during summer months when temperatures and UV index values are highest. Additionally, search interest for these terms has generally increased from 2020 to 2024.
+- Search interest for "sunscreen," "SPF," and "UV protection" exhibits seasonal fluctuations, peaking during summer months when temperatures and UV index values are highest. Excluding some spikes in 2021 and 2022, search interest for these terms has generally slightly increased from 2020 to 2024.
 ![sunscreen search interest over time](/figures/plot-time-series/trend_sunscreen.png)
 ![SPF search interest over time](/figures/plot-time-series/trend_SPF.png)
 ![UV protection search interest over time](/figures/plot-time-series/trend_UV_protection.png)
 - One notable anomaly occurred between June and July 2021, when search interest for "sunscreen" spiked significantly. However, when comparing this spike to temperature trends and UV index trends, there is no corresponding peak in weather conditions, suggesting that external factors (e.g., media coverage, influencer discussions, policy changes) may have influenced this surge in interest.
 
-- Search interest for "skincare" does not follow the same seasonal pattern as the other terms but has steadily increased over time, indicating a broader trend of growing consumer interest in skincare beyond just sun protection.
-
 - Looking at weekly maximum temperature and weekly maximum UV index, these values exhibit a predictable seasonal pattern. However, an interesting trend emerges: maximum UV index values appear to be increasing over time, with notable peaks in 2023 and 2024.
+
+![Weekly Maximum Temperatures Over Time](/figures/plot-time-series/weekly_max_temp.png)
+![Weekly Maximum UV Index Values Over Time](/figures/plot-time-series/weekly_max_uv.png)
+
+- Search interest for "skincare" does not follow the same seasonal pattern as the other terms but has steadily increased over time, indicating a broader trend of growing consumer interest in skincare beyond just sun protection.
 
 #### Correlation Between Search Interest and Weather Conditions:
 
-Correlation plots reveal that both temperature and UV index are strongly correlated with search interest for "sunscreen," "SPF," and "UV protection." This suggests that public interest in sunscreen is indeed influenced by current weather trends. However, further analysis is needed to determine whether temperature, UV index, or another external factor is the primary driver of these trends.
+The normalized correlation plots reveal that both temperature and UV index are strongly correlated with search interest for "sunscreen," "SPF," and "UV protection." This suggests that public interest in sunscreen is indeed influenced by current weather trends. However, further analysis is needed to determine whether temperature, UV index, or another external factor is the primary driver of these trends.
+
+![Normalized Sunscreen Overlay Plot](/figures/plot-norm-overlay/normalized_temp_uv_vs_sunscreen.png)
+![Normalized SPF Overlay Plot](/figures/plot-norm-overlay/normalized_temp_uv_vs_SPF.png)
+![Normalized UV Protection Overlay Plot](/figures/plot-norm-overlay/normalized_temp_uv_vs_UV_protection.png)
 
 ### Interpretation & Implications
 
