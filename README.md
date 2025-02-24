@@ -153,9 +153,9 @@ Leveraging the cleaned dataset, I conducted three main types of analyses:
 
 - Search interest for "sunscreen," "SPF," and "UV protection" exhibits seasonal fluctuations, peaking during summer months when temperatures and UV index values are highest. Excluding some spikes in 2021 and 2022, search interest for these terms has generally slightly increased from 2020 to 2024.
 <p align="center">
-  <img src="figures/plot-time-series/trend_sunscreen.png" width="500">
-  <img src="figures/plot-time-series/trend_SPF.png" width="500">
-  <img src="figures/plot-time-series/trend_UV_protection.png" width="500">
+  <img src="figures/plot-time-series/trend_sunscreen.png" width="600">
+  <img src="figures/plot-time-series/trend_SPF.png" width="600">
+  <img src="figures/plot-time-series/trend_UV_protection.png" width="600">
 </p>
 
 ![sunscreen search interest over time](/figures/plot-time-series/trend_sunscreen.png)
