@@ -52,7 +52,64 @@ Before you begin this project, ensure you have the following installed:
 
 ## Folder Structure
 
-
+```
+trends-sunscreen-analysis/
+│-- src/
+│   │-- sentiment/
+│   │   │-- google
+│   │   │   │-- extract_google.py
+│   │   │   │-- raw-data/
+│   │   │   │   │-- usa-dc_weekly_trends_2020_2024.csv
+│   │-- weather/
+│   │   │-- visual-crossing/
+│   │   │   │-- extract_vc_2020-21.py
+│   │   │   │-- extract_vc_2022-23.py
+│   │   │   │-- extract_vc_2024.py
+│   │   │   │-- raw-data/
+│   │   │   │   │-- usa_daily_weather_2020_2021.csv
+│   │   │   │   │-- usa_daily_weather_2022_2023.csv
+│   │   │   │   │-- usa_daily_weather_2024.csv
+│-- analytics/
+│   │-- data-cleaning/
+│   │   │-- weather_trends_merged.py
+│   │   │-- data_processing.py
+│   │   │-- data/
+│   │   │   │-- weather_trends_merged.csv
+│   │   │   │-- weather_trends_cleaned.csv
+│   │-- plot-time-series/
+│   │   │-- plot_max_temps.py
+│   │   │-- plot_max_uv.py
+│   │   │-- plot_search_over_time.py
+│   │-- plot-correlation/
+│   │   │-- plot_search_vs_temp.py
+│   │   │-- plot_search_vs_uv.py
+│   │   │-- plot_overlay.py
+│-- figures/
+│   │-- plot-time-series/
+│   │   │-- weekly_max_temp.png
+│   │   │-- weekly_max_uv.png
+│   │   │-- trend_sunscreen.png
+│   │   │-- trend_SPF.png
+│   │   │-- trend_UV_protection.png
+│   │   │-- trend_skincare.png
+│   │-- plot-correlation/
+│   │   │-- temp_vs_sunscreen.png
+│   │   │-- temp_vs_SPF.png
+│   │   │-- temp_vs_UV_protection.png
+│   │   │-- temp_vs_skincare.png
+│   │   │-- uv_vs_sunscreen.png
+│   │   │-- uv_vs_SPF.png
+│   │   │-- uv_vs_UV_protection.png
+│   │   │-- uv_vs_skincare.png
+│   │-- plot-norm-overlay/
+│   │   │-- normalized_temp_uv_vs_sunscreen.png
+│   │   │-- normalized_temp_uv_vs_SPF.png
+│   │   │-- normalized_temp_uv_vs_UV_protection.png
+│   │   │-- normalized_temp_uv_vs_skincare.png
+│-- README.md
+│-- requirements.txt
+│-- .gitignore
+```
 
 ## Datasets
 
