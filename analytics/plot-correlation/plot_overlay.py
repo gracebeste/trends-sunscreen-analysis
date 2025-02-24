@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the processed data
-df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
+df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Normalize tempmax and uvindex to a 0-1 scale, to make them comparable in one overlay plot:
 df["tempmax_norm"] = (df["tempmax"] - df["tempmax"].min()) / (df["tempmax"].max() - df["tempmax"].min())

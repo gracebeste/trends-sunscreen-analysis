@@ -106,9 +106,9 @@ trends-sunscreen-analysis/
 │   │   │-- normalized_temp_uv_vs_SPF.png
 │   │   │-- normalized_temp_uv_vs_UV_protection.png
 │   │   │-- normalized_temp_uv_vs_skincare.png
+│-- .gitignore
 │-- README.md
 │-- requirements.txt
-│-- .gitignore
 ```
 
 ## Datasets

@@ -36,7 +36,7 @@ trends_data['date'] = pd.to_datetime(trends_data['date'])
 merged_data = pd.merge(weekly_weather, trends_data, left_on='week_start', right_on='date')
 
 # Save merged data
-merged_data.to_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_merged.csv', index=False)
+merged_data.to_csv('/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_merged.csv', index=False)
 print("VC Weather and Google Trends data merged and saved.")
 
 # Conduct QC checks on merged dataset

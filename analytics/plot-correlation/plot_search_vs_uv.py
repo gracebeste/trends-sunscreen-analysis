@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load and read in the processed data
-df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
+df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Create a function plot_search_vs_uv() to loop through the different search terms and create a UV comparison plot for each term:
 def plot_search_vs_uv(search_term):

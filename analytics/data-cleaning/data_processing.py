@@ -6,7 +6,7 @@ def load_and_process_data():
     """Load the dataset, preprocess columns, and save cleaned weekly data."""
     
     # Load raw data
-    filepath = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_merged.csv"
+    filepath = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_merged.csv"
     df = pd.read_csv(filepath)
 
     # Convert 'week_start' to datetime (force proper format)
@@ -23,7 +23,7 @@ def load_and_process_data():
     df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric, errors="coerce")
 
     # Save cleaned dataset
-    save_path = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv"
+    save_path = "/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_cleaned.csv"
     df.to_csv(save_path, index=False)
 
     print(f"Processed dataset saved to: {save_path}")

@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # Read in dataset:
-df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
+df = pd.read_csv("/Users/gracebeste/documents/trends-sunscreen-analysis/analytics/data-cleaning/data/weather_trends_cleaned.csv", parse_dates=["week_start"])
 
 # Set 'week_start' as the index
 df.set_index('week_start', inplace=True)
