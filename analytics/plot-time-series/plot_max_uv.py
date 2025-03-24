@@ -26,7 +26,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(df.index, df['uvindex'], color='chocolate', linewidth=2, label='Max UV')
 
 # Format axes
-ax.xaxis.set_major_locator(mdates.MonthLocator())
+ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=[1, 4, 7, 10]))
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%b')) # Only show month names
 
 # Modify tick labels to color-code them by year
@@ -38,7 +38,7 @@ for label, tick_date in zip(ax.get_xticklabels(), tick_dates):
     label.set_color(year_color_map.get(year, 'black'))  # Assign color based on year
 
 # Adjust label visibility
-plt.xticks(rotation=45, fontsize=7.5)
+plt.xticks(rotation=45, fontsize=9)
 plt.subplots_adjust(bottom=0.15)  # Avoid cutoff issues for x-axis title
 
 # Label axes, create title, and format the background of the plot
